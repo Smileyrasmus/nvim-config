@@ -59,6 +59,7 @@ return packer.startup(function(use)
 	use({ "goolord/alpha-nvim", commit = "ef27a59e5b4d7b1c2fe1950da3fe5b1c5f3b4c94" })
 	use("folke/which-key.nvim")
 	use("BurntSushi/ripgrep")
+	use("davidgranstrom/nvim-markdown-preview") -- Markdown preview
 
 	-- Colorschemes
 	use({ "folke/tokyonight.nvim", commit = "8223c970677e4d88c9b6b6d81bda23daf11062bb" })
