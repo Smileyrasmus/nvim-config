@@ -3,6 +3,11 @@ if not status_ok then
 	return
 end
 
+-- makes C compiler work, don't know how
+require'nvim-treesitter.install'.compilers = {"musl-gcc"}
+require'nvim-treesitter.parsers'.command_extra_args = {["musl-gcc"] = {"-static"}}
+-- end
+
 configs.setup({
 	ensure_installed = "all", -- one of "all" or a list of languages
 	ignore_install = { "" }, -- List of parsers to ignore installing
