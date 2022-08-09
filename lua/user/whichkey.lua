@@ -97,9 +97,9 @@ local mappings = {
   e = {
     name = "Explorer",
     e = { "<cmd>NvimTreeToggle<cr>", "Toggle" },
-    E = { "<cmd>NvimTreeRefresh<cr>", "Refresh" },
+    r = { "<cmd>NvimTreeRefresh<cr>", "Refresh" },
     c = { "<cmd>NvimTreeCollapse<cr>", "Collapse" },
-    C = { "<cmd>NvimTreeCollapseKeepBuffers<cr>", "Collapse -buffers" },
+    b = { "<cmd>NvimTreeCollapseKeepBuffers<cr>", "Collapse -buffers" },
   },
   p = {
     name = "Packer",
