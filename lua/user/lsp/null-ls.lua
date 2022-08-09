@@ -19,6 +19,7 @@ null_ls.setup({
     diagnostics.curlylint.with({
       extra_filetypes = { "twig" },
     }),
+    -- diagnostics.yamllint,
     -- diagnostics.flake8
 	},
 })
