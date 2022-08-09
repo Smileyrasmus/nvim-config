@@ -20,3 +20,6 @@ configs.setup({
 	},
 	indent = { enable = true, disable = { "python", "css" } },
 })
+
+local ft_to_parser = require"nvim-treesitter.parsers".filetype_to_parsername
+ft_to_parser.twig = "html" -- make twig file use html parser
