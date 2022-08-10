@@ -16,6 +16,8 @@ vim.cmd [[
   augroup _markdown
     autocmd!
     autocmd FileType markdown setlocal wrap
+    autocmd FileType markdown setlocal tabstop=4
+    autocmd FileType markdown setlocal shiftwidth=4
   augroup end
 
   augroup _auto_resize
@@ -27,6 +29,11 @@ vim.cmd [[
     autocmd!
     autocmd User AlphaReady set showtabline=0 | autocmd BufUnload <buffer> set showtabline=2
   augroup end
+
+  augroup _yaml
+    autocmd!
+    autocmd FileType yaml setlocal tabstop=4
+    autocmd FileType yaml setlocal shiftwidth=4
 ]]
 
 -- Autoformat

@@ -166,6 +166,11 @@ local mappings = {
     },
   },
   s = {
+    name = "split",
+    h = { "<cmd>split<cr>", "Horizontal" },
+    v = { "<cmd>vsplit<cr>", "Vertical" },
+  },
+  S = {
     name = "Search",
     b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
     c = { "<cmd>Telescope colorscheme<cr>", "Colorscheme" },
