@@ -7,7 +7,16 @@ local actions = require "telescope.actions"
 
 telescope.setup {
   defaults = {
-
+    vimgrep_arguments = { -- makes live_grep also search files that are ignored by .gitignore
+      'rg',
+      '--color=never',
+      '--no-heading',
+      '--with-filename',
+      '--line-number',
+      '--column',
+      '--smart-case',
+      '-u'
+    },
     prompt_prefix = " ",
     selection_caret = " ",
     path_display = { "smart" },
